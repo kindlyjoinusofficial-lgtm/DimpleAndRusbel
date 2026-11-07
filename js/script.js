@@ -8,19 +8,19 @@
       weddingDate: "2026-12-18T15:00:00+08:00",
       weddingDateLong: "December 18, 2026",
       weddingDateShort: "12 · 18 · 2026",
-      location: "Batangas",
+      location: "Merbau Events and Villas",
 
       ceremony: {
         day: "Friday",
         time: "3:00 PM",
         timeDisplay: "3:00 in the afternoon",
         arrivalNote: "Please arrive 20–30 minutes early",
-        venue: "Batangas Events and Villas"
+        venue: "Merbau Events and Villas"
       },
 
       reception: {
         time: "5:30 PM",
-        venue: "Batangas Events and Villas"
+        venue: "Merbau Events and Villas"
       },
 
       schedule: [
@@ -36,51 +36,268 @@
         groomParentMother: "Antonina Bulanan",
         groomParentFather: "Ferdinand Bulanan",
 
-        ninang1: "Corazon Garcia",
-        ninang2: "Violeta Aromin",
-        ninang3: "Rosabelle Razon",
-        ninang4: "Kherr F. Meneses",
-        ninang5: "Name5",
+        ninang1: "Mrs. Marlyn Camora",
+        ninang2: "Mrs. Violeta Aromin",
+        ninang3: "Mrs. Rosabelle Razon",
+        ninang4: "Mrs. Salome Mabini",
+        ninang5: "Mrs. Kherr Meneses",
+        ninang6: "Mrs. Corazon Garcia",
 
-        ninong1: "Tony Garcia",
-        ninong2: "Sir Topei",
-        ninong3: "Sir Michael Aldover",
-        ninong4: "Dr Fridz Crespillo",
-        ninong5: "James Bella",
+        ninong1: "Mr. Andreson Chua",
+        ninong2: "Mr. Jose Christopher San Pablo",
+        ninong3: "Mr. James Nacion",
+        ninong4: "Dr. Fridz Crespillo",
+        ninong5: "Mr. Michael Aldover",
+        ninong6: "Mr. Tony Garcia",
 
         bestMan: "Niño Salonga Palma",
         coBestMan: "Daniel Dionisio",
         maidOfHonor: "Gleselle De Guzman",
         matronOfHonor: "Christine Dionisio",
 
-        cordFemale: "Cheryl ann Garcia",
-        cordMale: "Jer-C Dogillo",
-        veilFemale: "Jovi Rose Pasay",
-        veilMale: "Jay Quimson",
-        candleFemale: "Erika Bea",
-        candleMale: "Bryan Austine Braza",
+        cordFemale: "Mikee Cauyan",
+        cordMale: "Carlo Bulanan",
+        veilFemale: "Kimberly Papa",
+        veilMale: "Jer-C Dogillo",
+        candleFemale: "Celine Bulanan",
+        candleMale: "Fernie Bulanan",
 
-        bridesmaid: "Name",
-        groomsman: "Ya Fernie Bulanan",
+        bridesmaid1: "Erika Bea",
+        groomsman1: "Jay Jorell Quimson",
+        bridesmaid2: "Jovi Rose Pasay",
+        groomsman2: "Bryan Austine Braza",
 
         bibleBearer: "King Ethan Dane Dionisio",
         coinBearer: "Rylie Chad Bulanan",
         ringBearer: "Charles Nick Khaden Bulanan",
 
         bannerBearer1: "Charm Kathleen Bulanan",
-        bannerBearer2: "Franzkierra Cassie Bulanan",
+        bannerBearer2: "Franzkiera Cassie Bulanan",
         bannerBearer3: "Chanelle Kiersten Bulanan"
       },
 
       media: {
-        heroImage: "dimple-rusbel-hero.png",
+        heroImage: "images/dimple-rusbel-hero.jpeg",
+        firstChild: "images/firstChild.jpeg",
+        storyPhoto: "images/storyPhoto.jpeg",
         desktopIntroVideo: "video/pc_and_tablet.mp4",
-        mobileIntroVideo: "video/mobile.mp4"
+        mobileIntroVideo: "video/mobile.mp4",
+        gallery: [
+          {
+            image: "images/img1.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img2.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img3.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img4.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img5.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img6.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img7.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img8.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img9.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img10.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img11.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img12.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img13.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img14.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img15.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img16.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img17.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img18.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img19.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img20.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img21.jpeg",
+            alt: "Dimple and Rusbel photo"
+          },
+          {
+            image: "images/img22.jpeg",
+            alt: "Dimple and Rusbel photo"
+          }
+        ],
+      },
+      content: {
+          intro: {
+            eyebrow: "We are getting married",
+            title: "Our forever begins here",
+            text: "With joyful hearts, we invite you to share in the celebration of our love as we exchange vows and begin a beautiful new chapter together."
+          },
+        
+          story: {
+            eyebrow: "Two hearts, one story",
+            title: "A love worth celebrating",
+            text: "From simple conversations to shared dreams, every moment brought us closer to this day. We are grateful to celebrate the beginning of married life surrounded by the people who have loved and supported us."
+          }
+        },
+      faq: [
+      {
+        question: "What should I wear?",
+        answer: "Beach formal attire in soft ocean and coastal pastel tones. Think ocean blue, seafoam, aqua, sand, sage, blush coral, champagne, taupe, or light grey. Please avoid bridal white."
+      },
+      {
+        question: "Can I bring a plus one?",
+        answer: "Seats are reserved based on your invitation. Please check your invitation for your allocated number of seats."
+      },
+      {
+        question: "Are kids welcome?",
+        answer: "We kindly ask that guests follow the seating arrangements indicated on their invitation."
+      },
+      {
+        question: "Is the venue outdoors?",
+        answer: "Please refer to the wedding details above for information about the ceremony and reception venue."
+      },
+      {
+        question: "Do you have a gift registry?",
+        answer: "Your presence is the greatest gift we could ask for. Thank you for celebrating this special day with us."
       }
+    ],
+    dressCode: {
+      eyebrow: "Ocean · Coastal Pastels",
+      title: "Ocean Dress Palette",
+      image: "images/dress-code-spring-pastel.png",
+      imageAlt: "Spring pastel yellow wedding dress palette with outfit ideas for women and men",
+      note: "Soft, romantic, and coastal. Guests may wear ocean blue, seafoam, aqua, sage, sand, champagne, shell ivory, blush coral, taupe, or light grey. Please avoid bridal white."
+    },
+
+    venue: {
+      eyebrow: "The venue",
+      title: "Merbau Events and Villas",
+      description: "Celebrate with us in a warm and beautiful setting surrounded by nature.",
+      mapsUrl: "https://www.google.com/maps/search/?api=1&query=Merbau%20Events%20and%20Villas",
+      mapEmbedUrl: "https://www.google.com/maps?q=Merbau%20Events%20and%20Villas&output=embed"
+    },
+    invitationRules: {
+      eyebrow: "A gentle reminder",
+      title: "Invitation Rules",
+      intro: "Thank you for helping us keep our celebration intimate, private, and centered on this special day.",
+
+      rules: [
+        {
+          title: "Keep Our Invitation Private",
+          formal: "Kindly keep this invitation off social media. We would love to keep our celebration private and among those dearest to us.",
+          warm: "Please keep this just between us! Kindly refrain from posting our invitation online.",
+          tagalog: "Mangyaring huwag munang i-post online ang imbitasyong ito. Nais naming panatilihing pribado ang aming pagdiriwang. Salamat!"
+        },
+        {
+          title: "No Surprise Announcements",
+          formal: "This day is dedicated to celebrating the couple. We kindly ask that you refrain from any personal announcements such as engagements, pregnancies, reveals, and the like.",
+          warm: "To keep the focus on the celebration, we kindly ask that there be no surprise announcements or proposals during our wedding.",
+          tagalog: "Hinihiling po namin na huwag gumawa ng anumang biglaang announcement, proposal, o iba pang espesyal na anunsyo sa araw ng aming kasal."
+        }
+      ]
+    }
     };
 
     function renderWeddingData(){
       const coupleNames = `${weddingData.bride} & ${weddingData.groom}`;
+      const contentBindings = {
+          "intro.eyebrow": weddingData.content.intro.eyebrow,
+          "intro.title": weddingData.content.intro.title,
+          "intro.text": weddingData.content.intro.text,
+
+          "story.eyebrow": weddingData.content.story.eyebrow,
+          "story.title": weddingData.content.story.title,
+          "story.text": weddingData.content.story.text,
+
+          "dressCode.eyebrow": weddingData.dressCode.eyebrow,
+          "dressCode.title": weddingData.dressCode.title,
+          "dressCode.note": weddingData.dressCode.note,
+
+          "venue.eyebrow": weddingData.venue.eyebrow,
+          "venue.title": weddingData.venue.title,
+          "venue.description": weddingData.venue.description,
+
+          "invitationRules.eyebrow": weddingData.invitationRules.eyebrow,
+          "invitationRules.title": weddingData.invitationRules.title,
+          "invitationRules.intro": weddingData.invitationRules.intro
+        };
+
+  document.querySelectorAll("[data-content]").forEach(el => {
+
+    const key = el.dataset.content;
+
+    if (contentBindings[key] !== undefined) {
+      el.textContent = contentBindings[key];
+    }
+  });
+
+  //  Dress code image
+    const dressCodeImage = document.getElementById("dressCodeImage");
+
+    if (dressCodeImage) {
+      dressCodeImage.src = weddingData.dressCode.image;
+      dressCodeImage.alt = weddingData.dressCode.imageAlt;
+    }
+    
+    //  Venue map and link
+    const venueMapsLink = document.getElementById("venueMapsLink");
+    const venueMap = document.getElementById("venueMap");
+
+    if (venueMapsLink) {
+      venueMapsLink.href = weddingData.venue.mapsUrl;
+    }
+
+    if (venueMap) {
+      venueMap.src = weddingData.venue.mapEmbedUrl;
+    }
+
 
       document.title = `${coupleNames} | Wedding Invitation`;
 
@@ -89,6 +306,7 @@
       document.querySelectorAll('[data-bind="weddingDateShort"]').forEach(el => el.textContent = weddingData.weddingDateShort);
       document.querySelectorAll('[data-bind="footerLine"]').forEach(el => el.textContent = `${weddingData.weddingDateLong} · ${weddingData.location}`);
 
+      //  Details grid
       const detailGrid = document.getElementById("detailGrid");
       if(detailGrid){
         detailGrid.innerHTML = `
@@ -97,7 +315,7 @@
           <article class="detail-card"><div class="icon">⌖</div><h3>Venue</h3><p>Ceremony and reception</p><strong>${weddingData.ceremony.venue}</strong></article>
         `;
       }
-
+      // Schedule timeline
       const scheduleTimeline = document.getElementById("scheduleTimeline");
       if(scheduleTimeline){
         scheduleTimeline.innerHTML = weddingData.schedule.map(item => `
@@ -108,6 +326,74 @@
           </article>
         `).join("");
       }
+
+      // FAQ
+      const faqList = document.getElementById("faqList");
+
+      if (faqList) {
+        faqList.innerHTML = weddingData.faq.map(item => `
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>${item.question}</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+
+            <div class="faq-answer-wrap">
+              <div class="faq-answer">
+                <p>${item.answer}</p>
+              </div>
+            </div>
+          </article>
+        `).join("");
+      }
+
+      // Gallery
+      const galleryTrack = document.getElementById("galleryTrack");
+
+      if (galleryTrack) {
+        galleryTrack.innerHTML = weddingData.media.gallery.map(item => `
+          <div
+            class="gallery-item"
+            role="img"
+            aria-label="${item.alt}"
+            style="background-image: url('${item.image}')"
+          ></div>
+        `).join("");
+      }
+
+      // Invitation rules
+      const invitationRulesGrid = document.getElementById("invitationRulesGrid");
+
+      if (invitationRulesGrid) {
+        invitationRulesGrid.innerHTML = weddingData.invitationRules.rules.map(rule => `
+          <article class="rule-text-card reveal">
+            <div class="rule-text-ornament" aria-hidden="true">✦</div>
+            <h3>${rule.title}</h3>
+
+            <div class="rule-text-grid">
+              <div class="rule-text-block">
+                <h4>Formal</h4>
+                <p>${rule.formal}</p>
+              </div>
+
+              <div class="rule-text-block">
+                <h4>Warm</h4>
+                <p>${rule.warm}</p>
+              </div>
+
+              <div class="rule-text-block">
+                <h4>Tagalog</h4>
+                <p>${rule.tagalog}</p>
+              </div>
+            </div>
+          </article>
+        `).join("");
+
+        invitationRulesGrid.querySelectorAll(".reveal").forEach(card => {
+          observer.observe(card);
+        });
+      }
+
 
       // Entourage values
       const entourageBindings = {
@@ -120,12 +406,15 @@
         ninang2: weddingData.entourage.ninang2,
         ninang3: weddingData.entourage.ninang3,
         ninang4: weddingData.entourage.ninang4,
+        ninang5: weddingData.entourage.ninang5,
+        ninang6: weddingData.entourage.ninang6,
 
         ninong1: weddingData.entourage.ninong1,
         ninong2: weddingData.entourage.ninong2,
         ninong3: weddingData.entourage.ninong3,
         ninong4: weddingData.entourage.ninong4,
         ninong5: weddingData.entourage.ninong5,
+        ninong6: weddingData.entourage.ninong6,
 
         bestMan: weddingData.entourage.bestMan,
         coBestMan: weddingData.entourage.coBestMan,
@@ -139,8 +428,10 @@
         candleFemale: weddingData.entourage.candleFemale,
         candleMale: weddingData.entourage.candleMale,
 
-        bridesmaid: weddingData.entourage.bridesmaid,
-        groomsman: weddingData.entourage.groomsman,
+        bridesmaid1: weddingData.entourage.bridesmaid1,
+        bridesmaid2: weddingData.entourage.bridesmaid2,
+        groomsman1: weddingData.entourage.groomsman1,
+        groomsman2: weddingData.entourage.groomsman2,
 
         bibleBearer: weddingData.entourage.bibleBearer,
         coinBearer: weddingData.entourage.coinBearer,
@@ -165,7 +456,13 @@
     const introVideo=document.getElementById('introVideo');
     const introVideoSource=document.getElementById('introVideoSource');
     const openInvitation=document.getElementById('openInvitation');
-
+    const hero = document.querySelector('.hero');
+    if (hero) {
+      hero.style.backgroundImage = `
+        linear-gradient(180deg,rgba(25,32,23,.12),rgba(25,32,23,.48)),
+        url("${weddingData.media.heroImage}")
+      `;
+    }
     function chooseIntroVideo(){
       const isMobile = window.matchMedia('(max-width: 600px)').matches;
       const desiredSrc = isMobile ? weddingData.media.mobileIntroVideo : weddingData.media.desktopIntroVideo;
@@ -175,13 +472,49 @@
         introVideo.load();
       }
     }
+    function applyMedia(){
+      const heroImage = weddingData.media.heroImage;
+      const storyPhoto = weddingData.media.storyPhoto;
+      const firstChild = weddingData.media.firstChild;
 
+      document.querySelector('.hero')?.style.setProperty(
+        'background-image',
+        `linear-gradient(180deg,rgba(25,32,23,.12),rgba(25,32,23,.48)),url("${heroImage}")`
+      );
+
+      document.querySelector('.countdown-wrap')?.style.setProperty(
+        'background-image',
+        `linear-gradient(rgba(47,61,38,.74),rgba(47,61,38,.74)),url("${heroImage}")`
+      );
+
+      document.querySelector('.story-photo')?.style.setProperty(
+        'background-image',
+        `url("${storyPhoto}")`
+      );
+
+      document.querySelector('.gallery-item:first-child')?.style.setProperty(
+        'background-image',
+        `url("${firstChild}")`
+      );
+
+      document.querySelector('.rsvp-banner')?.style.setProperty(
+        'background-image',
+        `linear-gradient(rgba(48,63,40,.78),rgba(48,63,40,.78)),url("${heroImage}")`
+      );
+    }
     chooseIntroVideo();
 
     function finishOpening(){
       opening.classList.add('hidden');
       sessionStorage.setItem('invitationOpened','yes');
     }
+
+    openInvitation.addEventListener('keydown',e=>{
+      if(e.key==='Enter' || e.key===' '){
+        e.preventDefault();
+        openInvitation.click();
+      }
+    });
 
     openInvitation.addEventListener('click',()=>{
       envelopeStage.classList.add('is-hidden');
@@ -207,7 +540,8 @@
     const target=new Date(weddingData.weddingDate).getTime();
     function tick(){const d=Math.max(0,target-Date.now()),s=Math.floor(d/1000);days.textContent=String(Math.floor(s/86400)).padStart(2,'0');hours.textContent=String(Math.floor((s%86400)/3600)).padStart(2,'0');minutes.textContent=String(Math.floor((s%3600)/60)).padStart(2,'0');seconds.textContent=String(s%60).padStart(2,'0')};tick();setInterval(tick,1000);
     const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-    renderWeddingData();
+     renderWeddingData();
+    applyMedia();
 
 
 
