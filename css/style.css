@@ -1157,3 +1157,30 @@ footer {
     height:120px !important;
   }
 }
+
+/* ============================================================
+   SECTION TITLES — GREAT VIBES + DARK BEIGE
+   Applies to the main section h2 titles only.
+   ============================================================ */
+:root{
+  --title-dark-beige:#8A6F47;
+}
+
+/* Main section titles that use the .serif class */
+.ocean-theme h2.serif{
+  font-family:"Great Vibes",cursive !important;
+  font-weight:400 !important;
+  letter-spacing:0 !important;
+  text-transform:none !important;
+  line-height:1.05;
+}
+
+/* Other prominent h2 titles that do not use .serif */
+.ocean-theme .guest-note-card h2,
+.ocean-theme .rsvp-banner h2{
+  font-family:"Great Vibes",cursive !important;
+  font-weight:400 !important;
+  letter-spacing:0 !important;
+  text-transform:none !important;
+  line-height:1.05;
+}
