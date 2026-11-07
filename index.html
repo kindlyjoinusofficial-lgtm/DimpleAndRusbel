@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dimple & Rusbel | Wedding Invitation</title>
+  <meta name="description" content="You are invited to celebrate the wedding of Dimple and Rusbel.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="ocean-theme">
+  <div class="opening" id="opening" aria-label="Wedding invitation opening">
+    <div class="opening-stage envelope-stage" id="envelopeStage">
+      <div class="ocean-envelope-wrap" id="openInvitation" role="button" tabindex="0" aria-label="Open wedding invitation">
+        <picture class="ocean-envelope-picture">
+          <source
+            media="(max-width: 600px)"
+            srcset="images/ocean-wedding-envelope-mobile.png"
+          >
+          <img
+            class="ocean-envelope-image"
+            src="images/ocean-wedding-envelope.png"
+            alt="Dimple and Rusbel ocean wedding invitation envelope"
+          >
+        </picture>
+
+        <span class="starfish-click-target" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <div class="opening-stage video-stage is-hidden" id="videoStage" aria-hidden="true">
+      <video class="intro-video" id="introVideo" preload="auto" playsinline webkit-playsinline>
+        <source id="introVideoSource" src="video/pc_and_tablet.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <header><div class="shell nav"><a class="brand" href="#home">D & R</a><nav class="nav-links"><a href="#details">Details</a><a href="#schedule">Schedule</a><a href="#gallery">Gallery</a><a href="#entourage">Entourage</a><a href="#dress-code">Dress Code</a><a href="html/rsvp.html" class="pill">RSVP</a></nav></div></header>
+
+  <main>
+    <section class="hero" id="home"><div class="hero-content"><h1 class="script" data-bind="coupleNames"></h1><div class="date" data-bind="weddingDateShort"></div></div><div class="scroll">Scroll to discover</div></section>
+
+    <section class="intro"><div class="shell reveal"><div class="leaf">❧</div><div class="eyebrow" data-content="intro.eyebrow"></div><h2 class="serif" data-content="intro.title"></h2><div class="ornament"></div><p data-content="intro.text"></p></div></section>
+
+    <section class="details" id="details"><div class="shell"><div class="section-title reveal"><div class="eyebrow">Save the date</div><h2 class="serif">Wedding Details</h2></div><div class="detail-grid reveal" id="detailGrid"><article class="detail-card"><div class="icon">☀</div><h3>Date</h3><p>Friday</p><strong>December 18, 2026</strong></article><article class="detail-card"><div class="icon">⌚</div><h3>Time</h3><p>Please arrive 20–30 minutes early</p><strong>3:00 in the afternoon</strong></article><article class="detail-card"><div class="icon">⌖</div><h3>Venue</h3><p>Ceremony and reception</p><strong>Batangas Events and Villas</strong></article></div></div></section>
+
+    <section class="countdown-wrap"><div class="shell reveal"><div class="eyebrow">Counting down to forever</div><h2 class="serif">Until We Say “I Do”</h2><div class="countdown"><div class="count-item"><b id="days">00</b><span>Days</span></div><div class="count-item"><b id="hours">00</b><span>Hours</span></div><div class="count-item"><b id="minutes">00</b><span>Minutes</span></div><div class="count-item"><b id="seconds">00</b><span>Seconds</span></div></div></div></section>
+
+    <section class="story story-framed"><div class="shell story-grid"><div class="story-photo reveal"></div><div class="story-copy reveal"><div class="eyebrow" data-content="story.eyebrow"></div><h2 class="serif" data-content="story.title"></h2><p data-content="story.text"></p><div class="signature script" data-bind="coupleNames"></div></div></div></section>
+
+    <section class="schedule" id="schedule"><div class="shell"><div class="section-title reveal"><div class="eyebrow">The celebration</div><h2 class="serif">Order of Events</h2></div><div class="timeline reveal" id="scheduleTimeline"><article class="event"><div class="event-time">2:30 PM</div><div class="event-mark"></div><div class="event-info"><h3>Guest Arrival</h3><p>Welcome, registration, and seating before the ceremony.</p></div></article><article class="event"><div class="event-time">3:00 PM</div><div class="event-mark"></div><div class="event-info"><h3>Wedding Ceremony</h3><p>We exchange vows surrounded by family and friends.</p></div></article><article class="event"><div class="event-time">4:30 PM</div><div class="event-mark"></div><div class="event-info"><h3>Photos & Cocktails</h3><p>Portraits, refreshments, and relaxed conversations.</p></div></article><article class="event"><div class="event-time">5:30 PM</div><div class="event-mark"></div><div class="event-info"><h3>Reception</h3><p>Dinner, speeches, cake, music, and dancing.</p></div></article></div></div></section>
+
+    <section class="gallery" id="gallery">
+        <div class="shell">
+            <div class="section-title reveal">
+                <div class="eyebrow">Memories together</div>
+                <h2 class="serif">Our Gallery</h2>
+                <p>Swipe left or right to browse our photos.</p>
+            </div>
+
+            <div class="gallery-carousel reveal" id="galleryCarousel">
+                <div class="gallery-viewport">
+                    <div class="gallery-track" id="galleryTrack"></div>
+                </div>
+
+                <button
+                    class="gallery-arrow prev"
+                    id="galleryPrev"
+                    type="button"
+                    aria-label="Previous photo"
+                >
+                    ‹
+                </button>
+
+                <button
+                    class="gallery-arrow next"
+                    id="galleryNext"
+                    type="button"
+                    aria-label="Next photo"
+                >
+                    ›
+                </button>
+
+                <div
+                    class="gallery-dots"
+                    id="galleryDots"
+                    aria-label="Gallery navigation"
+                ></div>
+
+                <div class="gallery-hint">
+                    Swipe on mobile, or use the arrows.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="entourage" id="entourage"><div class="shell"><div class="section-title reveal"><div class="eyebrow">Our wedding party</div><h2 class="serif">The Entourage</h2></div><p class="entourage-intro reveal">With grateful hearts, we honor the family and friends who will stand beside us as we begin our journey as husband and wife.</p><div class="entourage-grid">
+      <section class="formal-entourage-block reveal">
+        <h3 class="formal-entourage-title">With the Blessings of Our Parents</h3>
+        <div class="formal-pairs">
+          <div class="formal-pair-name" data-entourage="groomParentFather"></div>
+          <div class="formal-pair-name" data-entourage="brideParentFather"></div>
+          <div class="formal-pair-name" data-entourage="groomParentMother"></div>
+          <div class="formal-pair-name" data-entourage="brideParentMother"></div>
+        </div>
+      </section>
+      <section class="formal-entourage-block reveal">
+        <h3 class="formal-entourage-title">Principal Sponsors</h3>
+        <p class="formal-entourage-subtitle">to stand as witnesses to our vows</p>
+        <div class="formal-sponsor-columns">
+          <div class="formal-sponsor-column">
+            <h4>Ninong</h4>
+            <div class="formal-sponsor-list">
+              <div class="formal-sponsor-name" data-entourage="ninong1"></div>
+              <div class="formal-sponsor-name" data-entourage="ninong2"></div>
+              <div class="formal-sponsor-name" data-entourage="ninong3"></div>
+              <div class="formal-sponsor-name" data-entourage="ninong4"></div>
+              <div class="formal-sponsor-name" data-entourage="ninong5"></div>
+              <div class="formal-sponsor-name" data-entourage="ninong6"></div>
+            </div>
+          </div>
+          <div class="formal-sponsor-column">
+            <h4>Ninang</h4>
+            <div class="formal-sponsor-list">
+              <div class="formal-sponsor-name" data-entourage="ninang1"></div>
+              <div class="formal-sponsor-name" data-entourage="ninang2"></div>
+              <div class="formal-sponsor-name" data-entourage="ninang3"></div>
+              <div class="formal-sponsor-name" data-entourage="ninang4"></div>
+              <div class="formal-sponsor-name" data-entourage="ninang5"></div>
+              <div class="formal-sponsor-name" data-entourage="ninang6"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <article class="honor-pair-card reveal">
+        <h3 class="honor-pair-title">To Assist Us in Our Needs</h3>
+        <p class="honor-pair-saying">With love and gratitude, standing beside us on our special day</p>
+        <div class="honor-pair-grid">
+          <div class="honor-pair-cell"><span class="honor-role">Best Man</span><span class="honor-name" data-entourage="bestMan"></span></div>
+          <div class="honor-pair-cell"><span class="honor-role">Maid of Honor</span><span class="honor-name" data-entourage="maidOfHonor"></span></div>
+          <div class="honor-pair-cell"><span class="honor-role">Co-Best Man</span><span class="honor-name" data-entourage="coBestMan"></span></div>
+          <div class="honor-pair-cell"><span class="honor-role">Matron of Honor</span><span class="honor-name" data-entourage="matronOfHonor"></span></div>
+        </div>
+      </article>
+      <article class="entourage-card uniform-wide reveal"><h3>Cord</h3><p class="entourage-saying">To bind us together in love</p><div class="people-row"><div class="person"><span class="person-name" data-entourage="cordFemale"></span><span class="person-role">Cord</span></div><div class="person"><span class="person-name" data-entourage="cordMale"></span><span class="person-role">Cord</span></div></div></article>
+      <article class="entourage-card uniform-wide reveal"><h3>Veil</h3><p class="entourage-saying">To clothe us in unity and protection</p><div class="people-row"><div class="person"><span class="person-name" data-entourage="veilFemale"></span><span class="person-role">Veil</span></div><div class="person"><span class="person-name" data-entourage="veilMale"></span><span class="person-role">Veil</span></div></div></article>
+      <article class="entourage-card uniform-wide reveal"><h3>Candle</h3><p class="entourage-saying">To light our path with faith, love, and guidance</p><div class="people-row"><div class="person"><span class="person-name" data-entourage="candleFemale"></span><span class="person-role">Candle</span></div><div class="person"><span class="person-name" data-entourage="candleMale"></span><span class="person-role">Candle</span></div></div></article>
+      <article class="entourage-card uniform-wide reveal">
+        <h3>Bridesmaids &amp; Groomsmen</h3>
+        <p class="entourage-saying">To stand beside us in love and friendship</p>
+        <div class="people-row">
+          <div class="person"><span class="person-role">Bridesmaids</span><span class="person-name" data-entourage="bridesmaid1"></span><span class="person-name" data-entourage="bridesmaid2"></span></div>
+          <div class="person"><span class="person-role">Groomsmen</span><span class="person-name" data-entourage="groomsman1"></span><span class="person-name" data-entourage="groomsman2"></span></div>
+        </div>
+      </article>
+       <article class="entourage-card uniform-wide reveal"><h3>Ring Bearer</h3><p class="entourage-saying">To carry the rings that seal our vows</p><div class="people-row"><div class="person"><span class="person-name" data-entourage="ringBearer"></span><span class="person-role">Ring Bearer</span></div></div></article>
+      <article class="entourage-card uniform-wide reveal"><h3>Coin Bearer</h3><p class="entourage-saying">To symbolize blessings and shared prosperity</p><div class="people-row"><div class="person"><span class="person-name" data-entourage="coinBearer"></span><span class="person-role">Coin Bearer</span></div></div></article>
+      <article class="entourage-card uniform-wide reveal"><h3>Bible Bearer</h3><p class="entourage-saying">To carry the Word that guides our marriage</p><div class="people-row"><div class="person"><span class="person-name" data-entourage="bibleBearer"></span><span class="person-role">Bible Bearer</span></div></div></article>
+     
+      <article class="entourage-card wide reveal"><h3>Banner Bearers</h3><p class="entourage-saying">To proudly lead the way in our celebration</p><div class="people-row"><div class="person"><span class="person-name" data-entourage="bannerBearer1"></span><span class="person-role">Banner Bearer</span></div><div class="person"><span class="person-name" data-entourage="bannerBearer2"></span><span class="person-role">Banner Bearer</span></div><div class="person"><span class="person-name" data-entourage="bannerBearer3"></span><span class="person-role">Banner Bearer</span></div></div></article>
+    </div></div></section>
+
+    <section class="dress" id="dress-code">
+      <div class="shell">
+        <div class="section-title reveal">
+          <div class="eyebrow" data-content="dressCode.eyebrow"></div>
+          <h2 class="serif" data-content="dressCode.title"></h2>
+        </div>
+
+        <div class="dress-card reveal">
+          <img
+            id="dressCodeImage"
+            src=""
+            alt=""
+          >
+        </div>
+
+        <p class="dress-note reveal" data-content="dressCode.note"></p>
+      </div>
+    </section>
+
+    <section class="venue" id="venue">
+      <div class="shell">
+        <div class="venue-card reveal">
+          <div class="venue-copy">
+
+            <div class="eyebrow" data-content="venue.eyebrow"></div>
+
+            <h2 class="serif" data-content="venue.title"></h2>
+
+            <p data-content="venue.description"></p>
+
+            <a
+              class="primary-btn"
+              id="venueMapsLink"
+              href="#"
+              target="_blank"
+              rel="noopener"
+            >
+              Open Google Maps
+            </a>
+
+          </div>
+
+          <iframe
+            class="map"
+            id="venueMap"
+            title="Wedding venue map"
+            src=""
+            loading="lazy">
+          </iframe>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="shell">
+        <div class="section-title reveal">
+          <div class="eyebrow">Good to know</div>
+          <h2 class="serif">FAQ</h2>
+        </div>
+
+        <div class="faq-list reveal" id="faqList"></div>
+      </div>
+    </section>
+
+    <section class="rules" id="invitation-rules">
+      <div class="shell">
+
+        <div class="section-title reveal">
+          <div class="eyebrow" data-content="invitationRules.eyebrow"></div>
+          <h2 class="serif" data-content="invitationRules.title"></h2>
+        </div>
+
+        <p
+          class="rules-intro reveal"
+          data-content="invitationRules.intro">
+        </p>
+
+        <div class="rules-grid" id="invitationRulesGrid">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="guest-note" id="guest-reminder">
+      <div class="shell">
+        <article class="guest-note-card reveal">
+          <div class="eyebrow">A kind reminder</div>
+          <h2>Please Do Not Bring Uninvited Guests</h2>
+          <div class="guest-note-grid">
+            <div class="guest-note-block"><h3>Formal</h3><p>Due to limited seating, we are only able to accommodate the guest or guests named on this invitation. Thank you for understanding.</p></div>
+            <div class="guest-note-block"><h3>Warm</h3><p>We have reserved a seat especially for you. To keep our day intimate, we kindly ask that only those named on the invitation attend.</p></div>
+            <div class="guest-note-block"><h3>Tagalog</h3><p>Dahil limitado ang aming guest list, ang imbitasyong ito ay para lamang sa mga pangalang nakasaad dito. Salamat sa inyong pang-unawa.</p></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="rsvp-banner" id="rsvp"><div class="reveal"><div class="eyebrow">Kindly respond</div><h2 class="script">Will you join us?</h2><p>Please send your response through our RSVP page.</p><a class="primary-btn" href="html/rsvp.html">RSVP Now</a></div></section>
+  </main>
+  <footer><div class="footer-names script" data-bind="coupleNames"></div><div class="eyebrow" data-bind="footerLine"></div></footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
