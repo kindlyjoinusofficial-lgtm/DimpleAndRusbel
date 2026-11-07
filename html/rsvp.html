@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>RSVP | Dimple & Rusbel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--deep:#34452e;--ink:#50523a;--paper:#fffdf8;--yellow:#f3d879;--gold:#c8a24f;--line:#ded4ae}*{box-sizing:border-box}body{margin:0;min-height:100svh;font-family:Montserrat,Arial,sans-serif;color:var(--ink);background:linear-gradient(rgba(255,253,248,.87),rgba(255,253,248,.94)),url('dimple-rusbel-hero.png') center/cover fixed;display:grid;place-items:center;padding:34px 15px}body:before,body:after{content:"";position:fixed;width:300px;height:300px;border-radius:50%;z-index:-1;opacity:.35;background:repeating-conic-gradient(from 10deg,#b8c7a4 0 10deg,transparent 11deg 25deg)}body:before{left:-160px;bottom:-120px}body:after{right:-170px;top:-100px;transform:rotate(150deg)}.card{width:min(760px,100%);background:rgba(255,253,248,.93);border:1px solid rgba(255,255,255,.9);box-shadow:0 28px 80px rgba(59,62,40,.2);padding:clamp(30px,6vw,65px);text-align:center}.eyebrow{font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;font-weight:600;color:#77785b}.names{font:400 clamp(3.8rem,10vw,6.2rem) "Great Vibes",cursive;color:var(--deep);margin:13px 0 0}.title{font:500 clamp(2.2rem,6vw,3.5rem) "Cormorant Garamond",serif;margin:0}.intro{font:1.15rem/1.7 "Cormorant Garamond",serif;max-width:520px;margin:12px auto 30px}.ornament{width:120px;height:1px;background:var(--gold);margin:23px auto}form{text-align:left;display:grid;grid-template-columns:1fr 1fr;gap:18px}label{display:block;font-size:.69rem;text-transform:uppercase;letter-spacing:.13em;font-weight:600;margin:0 0 8px}input,select,textarea{width:100%;border:1px solid var(--line);background:white;border-radius:0;padding:15px 14px;font:inherit;color:var(--ink);outline:none}input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,162,79,.12)}textarea{min-height:130px;resize:vertical}.full{grid-column:1/-1}.submit{width:100%;border:0;padding:16px;background:var(--deep);color:white;font:600 .72rem Montserrat;letter-spacing:.18em;text-transform:uppercase;cursor:pointer}.submit:hover{background:#506548}.submit:disabled{opacity:.65}.message{display:none;padding:14px;margin-top:15px;text-align:center;background:#f7edc7}.guest-note{margin:0 auto 34px;padding:26px 24px;border:1px solid var(--line);background:rgba(255,255,255,.7);text-align:center}.guest-note h2{margin:0 0 18px;font:600 clamp(1.55rem,4vw,2.15rem) 'Cormorant Garamond',serif;letter-spacing:.08em;text-transform:uppercase;color:#7a2948}.guest-note-block{margin:18px auto;max-width:590px}.guest-note-block h3{margin:0 0 6px;font:600 1.05rem 'Cormorant Garamond',serif;letter-spacing:.16em;text-transform:uppercase;color:#35372b}.guest-note-block p{margin:0;font:italic 1.05rem/1.65 'Cormorant Garamond',serif;letter-spacing:.08em;color:#4f503f}.guest-note-divider{width:72px;height:1px;background:var(--gold);margin:16px auto}.back{display:inline-block;margin-top:25px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--deep);text-decoration:none;border-bottom:1px solid var(--deep)}@media(max-width:620px){form{grid-template-columns:1fr}.full{grid-column:auto}.card{padding:36px 20px}.names{font-size:4rem}}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="eyebrow">December 18, 2026</div><div class="names">Dimple & Rusbel</div><div class="ornament"></div><h1 class="title">Kindly RSVP</h1><p class="intro">We hope you can celebrate with us. Please send your response using the form below.</p>
+    <section class="guest-note" aria-labelledby="guest-note-title">
+      <h2 id="guest-note-title">Please Do Not Bring Uninvited Guests</h2>
+      <div class="guest-note-block">
+        <h3>Formal</h3>
+        <p>Due to limited seating, we are only able to accommodate the guest or guests named on this invitation. Thank you for understanding.</p>
+      </div>
+      <div class="guest-note-divider"></div>
+      <div class="guest-note-block">
+        <h3>Warm</h3>
+        <p>We have reserved a seat especially for you. To keep our day intimate, we kindly ask that only those named on the invitation attend.</p>
+      </div>
+      <div class="guest-note-divider"></div>
+      <div class="guest-note-block">
+        <h3>Tagalog</h3>
+        <p>Dahil limitado ang aming guest list, ang imbitasyong ito ay para lamang sa mga pangalang nakasaad dito. Salamat sa inyong pang-unawa.</p>
+      </div>
+    </section>
+    <form id="rsvpForm">
+      <div><label for="name">Name</label><input id="name" name="name" autocomplete="name" required placeholder="Your full name"></div>
+      <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div>
+      <div class="full"><label for="attendance">Will you attend?</label><select id="attendance" name="attendance" required><option value="" selected disabled>Please select</option><option value="Joyfully attending">Joyfully attending</option><option value="Regretfully unable">Regretfully unable</option></select></div>
+      <div class="full"><label for="notes">Notes</label><textarea id="notes" name="notes" placeholder="Share a message, prayer, or special note"></textarea></div>
+      <div class="full"><button class="submit" type="submit">Send RSVP</button><div class="message" id="message"></div></div>
+    </form>
+    <a class="back" href="index.html">← Back to invitation</a>
+  </main>
+  <script>
+    const APPS_SCRIPT_URL='PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE';
+    document.getElementById('rsvpForm').addEventListener('submit',async function(e){e.preventDefault();const btn=this.querySelector('button'),msg=document.getElementById('message');if(APPS_SCRIPT_URL.includes('PASTE_YOUR')){alert('Please add your Google Apps Script Web App URL in rsvp.html first.');return}btn.disabled=true;btn.textContent='Sending...';msg.style.display='none';const data=new URLSearchParams(new FormData(this));data.append('submittedAt',new Date().toISOString());try{await fetch(APPS_SCRIPT_URL,{method:'POST',mode:'no-cors',body:data});msg.textContent='Thank you! Your RSVP has been received.';msg.style.display='block';this.reset()}catch(err){msg.textContent='We could not send your RSVP. Please try again.';msg.style.display='block'}finally{btn.disabled=false;btn.textContent='Send RSVP'}});
+  </script>
+</body>
+</html>
