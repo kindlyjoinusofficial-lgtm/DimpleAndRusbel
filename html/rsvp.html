@@ -5,18 +5,7 @@
   <title>RSVP | Dimple & Rusbel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-  <style>
-    :root{--deep:#34452e;--ink:#50523a;--paper:#fffdf8;--yellow:#f3d879;--gold:#c8a24f;--line:#ded4ae}*{box-sizing:border-box}body{margin:0;min-height:100svh;font-family:Montserrat,Arial,sans-serif;color:var(--ink);background:linear-gradient(rgba(255,253,248,.87),rgba(255,253,248,.94)),url('dimple-rusbel-hero.png') center/cover fixed;display:grid;place-items:center;padding:34px 15px}body:before,body:after{content:"";position:fixed;width:300px;height:300px;border-radius:50%;z-index:-1;opacity:.35;background:repeating-conic-gradient(from 10deg,#b8c7a4 0 10deg,transparent 11deg 25deg)}body:before{left:-160px;bottom:-120px}body:after{right:-170px;top:-100px;transform:rotate(150deg)}.card{width:min(760px,100%);background:rgba(255,253,248,.93);border:1px solid rgba(255,255,255,.9);box-shadow:0 28px 80px rgba(59,62,40,.2);padding:clamp(30px,6vw,65px);text-align:center}.eyebrow{font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;font-weight:600;color:#77785b}.names{font:400 clamp(3.8rem,10vw,6.2rem) "Great Vibes",cursive;color:var(--deep);margin:13px 0 0}.title{font:500 clamp(2.2rem,6vw,3.5rem) "Cormorant Garamond",serif;margin:0}.intro{font:1.15rem/1.7 "Cormorant Garamond",serif;max-width:520px;margin:12px auto 30px}.ornament{width:120px;height:1px;background:var(--gold);margin:23px auto}form{text-align:left;display:grid;grid-template-columns:1fr 1fr;gap:18px}label{display:block;font-size:.69rem;text-transform:uppercase;letter-spacing:.13em;font-weight:600;margin:0 0 8px}input,select,textarea{width:100%;border:1px solid var(--line);background:white;border-radius:0;padding:15px 14px;font:inherit;color:var(--ink);outline:none}input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,162,79,.12)}textarea{min-height:130px;resize:vertical}.full{grid-column:1/-1}.submit{width:100%;border:0;padding:16px;background:var(--deep);color:white;font:600 .72rem Montserrat;letter-spacing:.18em;text-transform:uppercase;cursor:pointer}.submit:hover{background:#506548}.submit:disabled{opacity:.65}.message{display:none;padding:14px;margin-top:15px;text-align:center;background:#f7edc7}.guest-note{margin:0 auto 34px;padding:26px 24px;border:1px solid var(--line);background:rgba(255,255,255,.7);text-align:center}.guest-note h2{margin:0 0 18px;font:600 clamp(1.55rem,4vw,2.15rem) 'Cormorant Garamond',serif;letter-spacing:.08em;text-transform:uppercase;color:#7a2948}.guest-note-block{margin:18px auto;max-width:590px}.guest-note-block h3{margin:0 0 6px;font:600 1.05rem 'Cormorant Garamond',serif;letter-spacing:.16em;text-transform:uppercase;color:#35372b}.guest-note-block p{margin:0;font:italic 1.05rem/1.65 'Cormorant Garamond',serif;letter-spacing:.08em;color:#4f503f}.guest-note-divider{width:72px;height:1px;background:var(--gold);margin:16px auto}.back{display:inline-block;margin-top:25px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--deep);text-decoration:none;border-bottom:1px solid var(--deep)}@media(max-width:620px){form{grid-template-columns:1fr}.full{grid-column:auto}.card{padding:36px 20px}.names{font-size:4rem}}
-  
-    .validation-form{margin-top:10px}
-    .validation-message{background:#fbe9e7;color:#7a2948;border:1px solid #ebc2bc}
-    .validation-message.success{background:#eaf4ec;color:#355d3d;border-color:#c9dfce}
-    #rsvpStep[hidden]{display:none}
-    #guestValidationStep[hidden]{display:none}
-    #name[readonly]{background:#f5f1e8;color:#5f604f}
-    .change-guest{margin-top:22px;border:0;background:transparent;color:var(--deep);font:600 .68rem Montserrat;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;border-bottom:1px solid var(--deep);padding:0 0 4px}
-
-  </style>
+  <link rel="stylesheet" href="../css/rsvp.css">
 </head>
 <body>
   <main class="card">
@@ -66,7 +55,9 @@
         </div>
       </section>
 
+        <div class="reserved-guest-count" id="reservedGuestCount" aria-live="polite"></div>
       <form id="rsvpForm">
+
         <div class="full">
           <label for="name">Name</label>
           <input id="name" name="name" autocomplete="name" required readonly>
@@ -92,178 +83,8 @@
       <button type="button" class="change-guest" id="changeGuest">← Validate a different guest</button>
     </section>
 
-    <a class="back" href="index.html">← Back to invitation</a>
+    <a class="back" href="../index.html">← Back to invitation</a>
   </main>
-  <script>
-    /*
-     * GOOGLE APPS SCRIPT WEB APP
-     *
-     * Replace this with your deployed Apps Script Web App URL:
-     * https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec
-     *
-     * The same Apps Script endpoint can handle:
-     * 1. Guest validation through GET ?action=validateGuest
-     * 2. RSVP submission through POST
-     */
-    const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxBWTmR7ZwLeCsBut4e-o5jjSR8i1ikzuobqOIt8ahAMCpXx_okeAoo0VlqP50PNFacKg/exec";
-
-    const validationStep = document.getElementById("guestValidationStep");
-    const rsvpStep = document.getElementById("rsvpStep");
-    const validationForm = document.getElementById("guestValidationForm");
-    const validationMessage = document.getElementById("validationMessage");
-    const rsvpName = document.getElementById("name");
-    const changeGuest = document.getElementById("changeGuest");
-
-    /*
-     * STEP 1 — VALIDATE GUEST AGAINST GOOGLE SHEET
-     */
-    validationForm.addEventListener("submit", async function(e) {
-      e.preventDefault();
-
-      const firstName = document.getElementById("firstName").value.trim();
-      const lastName = document.getElementById("lastName").value.trim();
-      const btn = this.querySelector('button[type="submit"]');
-
-      validationMessage.classList.remove("success");
-      validationMessage.style.display = "none";
-
-      if (APPS_SCRIPT_URL.includes("PASTE_YOUR")) {
-        alert("Please add your Google Apps Script Web App URL in rsvp.html first.");
-        return;
-      }
-
-      btn.disabled = true;
-      btn.textContent = "Checking...";
-
-      try {
-        const url =
-          `${APPS_SCRIPT_URL}` +
-          `?action=validateGuest` +
-          `&firstName=${encodeURIComponent(firstName)}` +
-          `&lastName=${encodeURIComponent(lastName)}`;
-
-        const response = await fetch(url);
-
-        if (!response.ok) {
-          throw new Error(`Validation request failed: ${response.status}`);
-        }
-
-        const result = await response.json();
-
-        if (!result.found) {
-          validationMessage.textContent =
-            "You are not in the list, please contact Dimple or Rusbel to validate the list.";
-          validationMessage.style.display = "block";
-          return;
-        }
-
-        validationMessage.textContent = "Guest validated successfully.";
-        validationMessage.classList.add("success");
-        validationMessage.style.display = "block";
-
-        // Use the exact name returned by Google Sheets.
-        rsvpName.value =
-          `${result.firstName || firstName} ${result.lastName || lastName}`.trim();
-
-        // Optional: save validated guest information for RSVP submission.
-        rsvpName.dataset.firstName = result.firstName || firstName;
-        rsvpName.dataset.lastName = result.lastName || lastName;
-
-        window.setTimeout(() => {
-          validationStep.hidden = true;
-          rsvpStep.hidden = false;
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
-        }, 350);
-
-      } catch (error) {
-        console.error("Guest validation error:", error);
-
-        validationMessage.textContent =
-          "We could not validate your name right now. Please try again.";
-        validationMessage.style.display = "block";
-
-      } finally {
-        btn.disabled = false;
-        btn.textContent = "Validate Guest";
-      }
-    });
-
-    /*
-     * RETURN TO THE VALIDATION SCREEN
-     */
-    changeGuest.addEventListener("click", () => {
-      rsvpStep.hidden = true;
-      validationStep.hidden = false;
-
-      validationForm.reset();
-      validationMessage.style.display = "none";
-
-      document.getElementById("rsvpForm").reset();
-      rsvpName.dataset.firstName = "";
-      rsvpName.dataset.lastName = "";
-
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    });
-
-    /*
-     * STEP 2 — SUBMIT RSVP TO GOOGLE SHEET
-     */
-    document.getElementById("rsvpForm").addEventListener("submit", async function(e) {
-      e.preventDefault();
-
-      const btn = this.querySelector('button[type="submit"]');
-      const msg = document.getElementById("message");
-
-      if (APPS_SCRIPT_URL.includes("PASTE_YOUR")) {
-        alert("Please add your Google Apps Script Web App URL in rsvp.html first.");
-        return;
-      }
-
-      btn.disabled = true;
-      btn.textContent = "Sending...";
-      msg.style.display = "none";
-
-      const data = new URLSearchParams(new FormData(this));
-
-      // Add validated guest data and submission timestamp.
-      data.append("action", "submitRsvp");
-      data.append("firstName", rsvpName.dataset.firstName || "");
-      data.append("lastName", rsvpName.dataset.lastName || "");
-      data.append("submittedAt", new Date().toISOString());
-
-      try {
-        /*
-         * mode: "no-cors" is kept from your previous RSVP implementation.
-         * This means the browser cannot inspect the Apps Script response,
-         * but the submission will still be sent.
-         */
-        await fetch(APPS_SCRIPT_URL, {
-          method: "POST",
-          mode: "no-cors",
-          body: data
-        });
-
-        msg.textContent = "Thank you! Your RSVP has been received.";
-        msg.style.display = "block";
-
-      } catch (error) {
-        console.error("RSVP submission error:", error);
-
-        msg.textContent =
-          "We could not send your RSVP. Please try again.";
-        msg.style.display = "block";
-
-      } finally {
-        btn.disabled = false;
-        btn.textContent = "Send RSVP";
-      }
-    });
-  </script>
+  <script src="../js/rsvp.js"></script>
 </body>
 </html>
