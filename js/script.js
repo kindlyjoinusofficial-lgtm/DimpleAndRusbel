@@ -189,23 +189,19 @@
       faq: [
       {
         question: "What should I wear?",
-        answer: "Beach formal attire in soft ocean and coastal pastel tones. Think ocean blue, seafoam, aqua, sand, sage, blush coral, champagne, taupe, or light grey. Please avoid bridal white."
+        answer: "Strictly Formal attire. Guests may choose Pastel yellow or Beige in a formal attire. Ladies: Formal Dress or long dress. Gentlemen: suit, long sleeve and slacks. Please avoid White and Black"
       },
       {
         question: "Can I bring a plus one?",
-        answer: "Seats are reserved based on your invitation. Please check your invitation for your allocated number of seats."
+        answer: "We kindly ask for your understanding in adhering to our policy of not bringing uninvited guest. Due to space and seating constraints, our guest list is under strict limitation. Your cooperation in this matter is highly appreciated, as it ensures that every guest has a comfortable and enjoyable experience."
       },
       {
         question: "Are kids welcome?",
-        answer: "We kindly ask that guests follow the seating arrangements indicated on their invitation."
+        answer: "While we truly love your little ones and to allow all of our guests to relax and enjoy themselves, we have decided to make our wedding an adults-only celebration. We hope you will still be able to join us and enjoy a relaxing evening off!"
       },
       {
         question: "Is the venue outdoors?",
-        answer: "Please refer to the wedding details above for information about the ceremony and reception venue."
-      },
-      {
-        question: "Do you have a gift registry?",
-        answer: "Your presence is the greatest gift we could ask for. Thank you for celebrating this special day with us."
+        answer: "Our ceremony will be held outdoors, followed by an indoor reception."
       }
     ],
     dressCode: {
@@ -213,7 +209,7 @@
       title: "Ocean Dress Palette",
       image: "images/dress-code-spring-pastel.png",
       imageAlt: "Spring pastel yellow wedding dress palette with outfit ideas for women and men",
-      note: "Soft, romantic, and coastal. Guests may wear ocean blue, seafoam, aqua, sage, sand, champagne, shell ivory, blush coral, taupe, or light grey. Please avoid bridal white."
+      note: "Strictly Formal attire, Guests may choose Pastel yellow or Beige in a formal attire.\nLadies: Formal Dress or long dress.\nGentlemen: Suit, long sleeves and slacks.\nPlease avoid White and Black."
     },
 
     venue: {
